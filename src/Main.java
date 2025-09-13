@@ -1,3 +1,4 @@
+import entity.ListaTarefa;
 import entity.Tarefa;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -5,8 +6,18 @@ import entity.Tarefa;
 public class Main {
     public static void main(String[] args) {
 
-        Tarefa tarefa = new Tarefa("Teste");
+        ListaTarefa listaTarefa = new ListaTarefa();
+        System.out.println("Número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
 
-        System.out.println(tarefa.getDescricao());
+        listaTarefa.adicionarTarefa("Tarefa 1");
+        listaTarefa.adicionarTarefa("Tarefa 2");
+        listaTarefa.adicionarTarefa("Tarefa 3");
+        listaTarefa.adicionarTarefa("Tarefa 4");
+        System.out.println("Número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.removerTarefa("Tarefa 4");
+        System.out.println("Número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+
+        listaTarefa.obterDescricoesTarefas();
     }
 }
