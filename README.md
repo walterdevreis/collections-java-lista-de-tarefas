@@ -1,5 +1,4 @@
-# collections-java-lista-de-tarefas
-## 1. Exercicio Lista de Tarefas.
+# Exercício Lista de Tarefas.
 
 Crie uma classe chamada "ListaTarefas" que possui uma lista de tarefas como atributo. Cada tarefa é representada por uma classe chamada "Tarefa" que possui um atributo de descrição. Implemente os seguintes métodos:
 
